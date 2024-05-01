@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=La Belle Aurore:wght@400;700&display=swap');
 
+/* Header Styles */
 .main-header {
     text-align: center;
     width: 100%;
@@ -9,6 +11,8 @@
     position: relative; /* Adjust as needed */
     z-index: 10; /* Ensures it stays above other content */
 }
+
+/* Global Styles */
 body {
     font-family: 'Merriweather', serif; /* Elegant serif font */
     background-color: #fef0f5; /* Soft pink background */
@@ -23,6 +27,7 @@ body {
     background-repeat: no-repeat;
 }
 
+/* Container Styles */
 .container {
     text-align: center;
     background: white;
@@ -34,6 +39,7 @@ body {
     margin-bottom: 20px; /* Adds space between the photo and poem containers */
 }
 
+/* Photo Container Styles */
 .photo-container {
     background-color: #fff;
     color: #444;
@@ -53,6 +59,7 @@ body {
     border-radius: 8px; /* Rounded corners for the images */
 }
 
+/* Poem Container Styles */
 .poem-container {
     background-color: #fff;
     color: #444;
@@ -68,12 +75,14 @@ body {
     background-color: #f8e8f9; /* A very soft pink background on hover */
 }
 
+/* Header Text Styles */
 h1 {
     color: #d63384; /* Richer pink for headings */
     font-family: 'La Belle Aurore', cursive; /* Cursive font for headers */
     font-size: 3.5em;
 }
 
+/* Poem Text Styles */
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;
