@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=La Belle Aurore:wght@400;700&display=swap');
+
+.main-header {
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f8e8f9; /* Optional: background color for the header */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds subtle shadow under the header */
+    position: relative; /* Adjust as needed */
+    z-index: 10; /* Ensures it stays above other content */
+}
+body {
+    font-family: 'Merriweather', serif; /* Elegant serif font */
+    background-color: #fef0f5; /* Soft pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px; /* Adds space between the photo and poem containers */
+}
+
+.photo-container {
+    background-color: #fff;
+    color: #444;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px; /* Rounded corners for the photo container */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo-container img {
+    max-width: 100%; /* Ensures the image is responsive and fits within the container */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the images */
+}
+
+.poem-container {
+    background-color: #fff;
+    color: #444;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+    border-left: 5px solid #ff4081; /* Deeper red-pink to signify love */
+    transition: all 0.3s ease-in-out;
+}
+
+.poem-container:hover {
+    transform: scale(1.05); /* Slightly enlarges the poem container on hover */
+    background-color: #f8e8f9; /* A very soft pink background on hover */
+}
+
+h1 {
+    color: #d63384; /* Richer pink for headings */
+    font-family: 'La Belle Aurore', cursive; /* Cursive font for headers */
+    font-size: 3.5em;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'La Belle Aurore', cursive; /* Cursive font for poems */
+    font-size: 26px;
+    color: #555; /* Softer text color for poem */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.8em; /* Adjust header font size on smaller screens */
+    }
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Poems and Daily Photo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
+</head>
+
+<body>
+
+    <!-- Love Poems Container -->
+    <div class="container">
+        <h1>Ally & Yuval</h1>
+        <div id="poem-container" class="poem-container">Loading poems...</div>
+    </div>
+
+    <!-- Daily Photo Container -->
+    <div class="container">
+        <div id="photo-container" class="photo-container">
+            <img id="dailyPhotoImg" alt="Daily Photo">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="fetchLove.js"></script>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', () => {
+            const filenames = [
+                "001.HEIC",
+                "002.jpeg",
+                "003.jpeg",
+                "004.jpeg",
+                "005.jpeg",
+                "006.JPEG",
+                "007.MP4",
+                "008.jpeg",
+                "009.MP4",
+                "010.jpeg",
+                "011.JPEG",
+                "012.JPEG",
+                "013.MP4",
+                "014.jpeg",
+                "015.JPG",
+                "016.MP4",
+                "017.heic",
+                "018.jpeg",
+                "019.jpeg",
+                "020.JPG",
+                "021.heic",
+                "022.JPG",
+                "023.JPG",
+                "024.HEIC",
+                "025.jpeg",
+                "026.HEIC",
+                "027.MP4",
+                "028.jpeg",
+                "029.jpeg",
+                "030.jpeg",
+                "031.jpeg",
+                "032.HEIC",
+                "033.PNG",
+                "034.JPG",
+                "035.JPG",
+                "036.HEIC",
+                "037.MP4",
+                "038.HEIC",
+                "039.MP4",
+                "040.HEIC",
+                "041.MP4",
+                "042.HEIC",
+                "043.MP4",
+                "044.HEIC",
+                "045.MP4",
+                "046.HEIC",
+                "047.MP4",
+                "048.HEIC",
+                "049.HEIC",
+                "050.HEIC",
+                "051.MP4",
+                "052.JPG",
+                "053.JPG",
+                "054.JPG",
+                "055.JPG",
+                "056.JPG",
+                "057.JPG",
+                "058.JPG",
+                "059.JPG",
+                "060.JPG",
+                "061.HEIC",
+                "062.HEIC",
+                "063.MP4",
+                "064.HEIC",
+                "065.HEIC",
+                "066.MP4",
+                "067.HEIC",
+                "068.HEIC",
+                "069.MP4",
+                "070.HEIC",
+                "071.HEIC",
+                "072.HEIC",
+                "073.MP4",
+                "074.HEIC",
+                "075.MP4",
+                "076.HEIC",
+                "077.HEIC",
+                "078.MP4",
+                "079.JPG",
+                "080.jpeg",
+                "081.HEIC",
+                "082.MP4",
+                "083.HEIC",
+                "084.HEIC",
+                "085.MP4",
+                "086.heic",
+                "087.MP4",
+                "088.jpeg",
+                "089.JPG",
+                "090.jpeg",
+                "091.HEIC",
+                "092.MP4",
+                "093.jpeg",
+                "094.HEIC",
+                "095.MP4",
+                "096.HEIC",
+                "097.MP4",
+                "098.HEIC",
+                "099.JPG",
+                "100.JPG",
+                "101.HEIC",
+                "102.HEIC",
+                "103.JPG",
+                "104.JPG",
+                "105.JPG",
+                "106.JPG",
+                "107.JPG",
+                "108.JPG",
+                "109.JPG",
+                "110.JPG",
+                "111.jpeg",
+                "112.JPG",
+                "113.JPG",
+                "114.JPG",
+                "115.JPG",
+                "116.jpeg",
+                "117.JPG",
+                "118.jpeg",
+                "119.jpeg",
+                "120.jpeg",
+                "121.JPG",
+                "122.JPG",
+                "123.JPG",
+                "124.JPG",
+                "125.JPG",
+                "126.JPG",
+                "127.heic",
+                "128.JPG"
+            ]
+            // Select random file from array
+            const randomFilename = filenames[Math.floor(Math.random() * filenames.length)];
+            document.getElementById('photo-container').innerHTML = `<img src="Photos/${randomFilename}" alt="Daily Photo">`;  // Displaying the image
+        });
+    </script>
+</body>
+
+</html>
